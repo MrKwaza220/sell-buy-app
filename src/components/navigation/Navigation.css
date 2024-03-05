@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-    background: #D7DDE5;
-    font-family: "Roboto", sans-serif;
-}
 
 nav {
     display: flex;
@@ -16,6 +11,8 @@ nav {
     padding: 15px 5%;
     align-items: center;
     background: #18283B;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
