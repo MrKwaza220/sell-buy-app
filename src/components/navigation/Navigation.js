@@ -1,32 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navigation.css";
 
 function Navigation() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="navigation_bar">
       <nav>
-        <div class="logo">MR KWAZA</div>
-        <ul>
+        <div className="logo">Mr Kwaza</div>
+        <ul className={showMenu ? "show" : ""}>
           <li>
-            <a href="#" class="active">
+            <a href="#" className="active">
               Home
             </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Messages</a>
           </li>
           <li>
-            <a href="#">Service</a>
+            <a href="#">Notification</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#">Favourites</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#">Search</a>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+
           </li>
         </ul>
+
+        <a href="#" className="menu" onClick={toggleMenu}>
+          <i className="fa fa-bars"></i>
+          Menu
+        </a>
       </nav>
     </div>
   );
 }
+
 export default Navigation;

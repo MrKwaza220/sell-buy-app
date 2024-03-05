@@ -5,18 +5,17 @@
     scroll-behavior: smooth;
     transition: 0.5s;
 }
-/* #7DB46CFF */
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 15px 5%;
     align-items: center;
-    /*  */
-    /* background: #18283B; */
     background: #232629;
     position: fixed;
     width: 100%;
+    font-size: 20px;
+    top: 0;
 }
 
 .logo {
@@ -44,6 +43,10 @@ ul li a:hover,
 ul li a.active {
     color: #232629;
     background: #E7EBE0FF;
+}
+.menu{
+    color: #E7EBE0FF;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
