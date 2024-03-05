@@ -4,31 +4,33 @@ import "./Homepage.css";
 function Homepage() {
   return (
     <section id="home">
+      <div className="homepage">
+        <div class="user_card">
+          <img src="userprofile.png" alt="profile" />
+          <h4>Mr Kwaza</h4>
+        </div>
 
-    <div className="homepage">
-      <div className="card">
-        <img src="" alt="John" />
-        <h4>Mr Kwaza</h4>
-
+        <div class="about_user">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Work</a>
+        </div>
         <div>
           <a href="#">
-            <i className="fa fa-dribbble"></i>
+            <img src="twitter.png" alt="x" />
           </a>
           <a href="#">
-            <i className="fa fa-twitter"></i>
+            <img src="facebook.png" alt="facebook" />
           </a>
           <a href="#">
-            <i className="fa fa-linkedin"></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-facebook"></i>
+            <img src="linkedln.png" alt="linkedln" />
           </a>
         </div>
         <p>
           <button>Contact</button>
         </p>
       </div>
-    </div>
     </section>
   );
 }

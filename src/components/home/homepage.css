@@ -23,6 +23,21 @@
     color: grey;
     font-size: 18px;
   }
+  img{
+    border-radius: 5px;
+    height: 60px;
+    width: 50px;
+    }
+    
+    .about_user{
+    margin: 15px;
+    display:flex;
+    column-gap: 10px;
+    
+    }
+    .about_user a{
+    font-size: 18px;
+    }
   
   button {
     border: none;
