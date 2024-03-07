@@ -14,6 +14,7 @@
   margin-top: 5rem;
   align-items: flex-start;
   display: flex;
+  width: 100%;
   padding: 5px 5%;
   column-gap: 3rem;
 }
@@ -21,7 +22,7 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 600px;
-  height: 500px;
+  height: 550px;
   border-radius: 20px;
   text-align: start;
   font-family: arial;
@@ -50,11 +51,12 @@ h4 {
   font-family: "Rubik", sans-serif;
 }
 .about_user {
-  margin: 15px 0 0 5px;
+  margin: 15px 0 0 0px;
   display: flex;
   column-gap: 30px;
-  border: 1px solid black;
+  border: 0px solid black;
   height: 300px;
+  width: 100%;
 }
 
 .home_content img {
@@ -97,6 +99,7 @@ a:hover {
   height: 500px;
   width: 500px;
   border-radius: 20px;
+
 }
 
 p, h1{
