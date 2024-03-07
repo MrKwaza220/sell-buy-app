@@ -11,16 +11,35 @@ function Homepage() {
             <h4>Mr Kwaza</h4>
           </div>
 
-          <div className="about_user">
-            <a href="">
+          <div class="about_user">
+            <a href="#" class="nav-link" data-section="home">
               Home
-              <div className="user_home">
-               
-              </div>
             </a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Work</a>
+            <a href="#" class="nav-link" data-section="about">
+              About
+            </a>
+            <a href="#" class="nav-link" data-section="services">
+              Services
+            </a>
+            <a href="#" class="nav-link" data-section="work">
+              Work
+            </a>
+
+            <div id="home-content" class="section-content">
+              <img src="Renting black.jpg" />
+            </div>
+
+            <div id="about-content" class="section-content">
+              <p>About Us</p>
+            </div>
+
+            <div id="services-content" class="section-content">
+              <p>Our Services</p>
+            </div>
+
+            <div id="work-content" class="section-content">
+              <p>Our Work</p>
+            </div>
           </div>
 
           <div className="user_contacts">
@@ -31,10 +50,10 @@ function Homepage() {
               <img src="twitter.png" alt="Twitter" />
             </a>
             <a href="#">
-            <img src="linkedln.png" alt="Linkedln" />
+              <img src="linkedln.png" alt="Linkedln" />
             </a>
             <a href="#">
-            <img src="Facebook.png" alt="Facebook" />
+              <img src="Facebook.png" alt="Facebook" />
             </a>
           </div>
           <p>
