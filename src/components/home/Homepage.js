@@ -63,7 +63,7 @@ const Homepage = () => {
                     
                     
                     <h1>Services Page</h1>
-                    <p>These are our services.</p>
+                    <p>These are our services</p>
                   </div>
                 )}
                  {/* Content for Work******************** */}
@@ -71,7 +71,7 @@ const Homepage = () => {
                   <div className="work-content">
                    
                     <h1>Work Page</h1>
-                    <p>Our work examples go here.</p>
+                    <p>Our work examples go here</p>
                   </div>
                 )}
               </div>
@@ -96,8 +96,11 @@ const Homepage = () => {
 
 
         {/*********** user favourites ***********************/}
-        <div className="user_favourite">
-
+        <div className="favourite">
+            <div className="user_favourites">
+            <h1>Your favourites</h1>
+            
+            </div>
         </div>
       </div>
     </section>
