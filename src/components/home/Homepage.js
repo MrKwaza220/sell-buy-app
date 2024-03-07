@@ -99,7 +99,11 @@ const Homepage = () => {
         <div className="favourite">
             <div className="user_favourites">
             <h1>Your favourites</h1>
-            
+            <p>kwaza</p>
+            <p>kwaza</p>
+            <p>kwaza</p>
+            <p>kwaza</p>
+
             </div>
         </div>
       </div>
