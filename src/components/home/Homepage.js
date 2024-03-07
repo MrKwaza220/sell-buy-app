@@ -6,6 +6,8 @@ const Homepage = () => {
   return (
     <section id="home">
       <div className="homepage">
+
+        {/****  user profile ***************************************/}
         <div className="card">
           <div className="user_card">
             <img src="userprofile.png" alt="profile" />
@@ -29,33 +31,45 @@ const Homepage = () => {
                 </a>
               </div>
 
-              
+              {/************ User Content ****************** */}
               <div className="content">
                 {activeSection === "home" && (
-                  <div className="home-content">
+                  <div className="home_content">
                     <img src="Renting black.jpg" alt="Home" />
+                    <img src="Renting white.jpg" alt="Home" />
+
                   </div>
                 )}
 
+
+                {/* ********Content for About **************/}
                 {activeSection === "about" && (
                   <div className="about-content">
-                    {/* Content for About */}
+
+                  
                     <h1>About Page</h1>
-                    <p>This is the about page content.</p>
+                    <p>
+                      Sunt in culpa qui officia deserunt mollit anim id est
+                      laborum consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco.
+                    </p>
                   </div>
                 )}
 
+                {/* Content for Services******************/}
                 {activeSection === "services" && (
                   <div className="services-content">
-                    {/* Content for Services */}
+                    
+                    
                     <h1>Services Page</h1>
                     <p>These are our services.</p>
                   </div>
                 )}
-
+                 {/* Content for Work******************** */}
                 {activeSection === "work" && (
                   <div className="work-content">
-                    {/* Content for Work */}
+                   
                     <h1>Work Page</h1>
                     <p>Our work examples go here.</p>
                   </div>
@@ -66,7 +80,7 @@ const Homepage = () => {
           <p>
             <button>Message</button>
           </p>
-
+          {/* ********users contacts********************/}
           <div className="user_contacts">
             <a href="#">
               <img src="twitter.png" alt="Twitter" />
@@ -78,6 +92,12 @@ const Homepage = () => {
               <img src="Facebook.png" alt="Facebook" />
             </a>
           </div>
+        </div>
+
+
+        {/*********** user favourites ***********************/}
+        <div className="user_favourite">
+
         </div>
       </div>
     </section>
