@@ -30,19 +30,27 @@ function Navigation() {
           <li>
             <a href="#">Search</a>
           </li>
-          <li>
-            <a href="#">Menu</a>
-
+          <li className="dropdown">
+            <a href="#" className="dropbtn">
+              Menu
+            </a>
+            <div className="dropdown-content">
+              <a href="#about">About</a>
+              <a href="#contact">Login</a>
+            </div>
           </li>
         </ul>
 
-        <a href="#" className="menu" onClick={toggleMenu}>
+        {/* <a href="#" className="menu" onClick={toggleMenu}>
           <i className="fa fa-bars"></i>
           Menu
-        </a>
+        </a> */}
       </nav>
     </div>
   );
 }
 
 export default Navigation;
+
+
+
