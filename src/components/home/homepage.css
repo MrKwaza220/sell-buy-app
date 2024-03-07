@@ -46,13 +46,17 @@
     border: 1px solid black;
     height: 200px;
     }
-    .about_user a{
-    font-size: 18px;
-    }
+   .user_home img{
+    height: 100px;
+   }
+    
     .user_contacts a{
       font-size:  10px;
     }
-  
+    .section-content {
+      display: none;
+    }
+    
   button {
     border: none;
     outline: 0;
