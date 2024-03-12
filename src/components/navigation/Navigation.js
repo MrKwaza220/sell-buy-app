@@ -8,6 +8,12 @@ function Navigation() {
     setShowMenu(!showMenu);
   };
 
+   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="navigation_bar">
       <nav>
@@ -30,11 +36,11 @@ function Navigation() {
           <li>
             <a href="#">Search</a>
           </li>
-          <li className="dropdown">
+          <li className="dropdown" onClick={toggleDropdown}>
             <a href="#" className="dropbtn">
               Menu
             </a>
-            <div className="dropdown-content">
+            <div className={`dropdown-content ${isOpen ? "show" : ""}`}>
               <a href="#about">About</a>
               <a href="#contact">Login</a>
             </div>
@@ -51,6 +57,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
-
-

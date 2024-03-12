@@ -43,11 +43,12 @@ ul li a.active {
     color: #232629;
     background: #E7EBE0FF;
 }
-.menu{
-    color: #E7EBE0FF;
+.menu {
+    color: #e7ebe0ff;
     display: none;
-}
-.dropdown {
+  }
+  
+  .dropdown {
     position: relative;
     display: inline-block;
   }
@@ -57,8 +58,13 @@ ul li a.active {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content.show {
+    display: block;
   }
   
   .dropdown-content a {
@@ -75,7 +81,7 @@ ul li a.active {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
+  
 @media screen and (max-width: 768px) {
     nav {
         border-bottom: 1px solid #455468;
