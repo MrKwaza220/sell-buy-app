@@ -17,7 +17,7 @@ const Homepage = () => {
           <div className="about_user">
             <div className="container">
               <div className="user_navigation">
-                <a href="#" onClick={() => setActiveSection("home")}>
+                <a href="#h" onClick={() => setActiveSection("home")}>
                   Home
                 </a>
                 <a href="#" onClick={() => setActiveSection("about")}>
