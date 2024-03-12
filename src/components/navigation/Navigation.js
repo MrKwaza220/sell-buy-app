@@ -35,7 +35,7 @@ function Navigation() {
           </li>
           <li>
             <a
-              href="#messages"
+              href="#userMessages"
               className={activePage === "messages" ? "active" : ""}
               onClick={() => handlePageClick("messages")}
             >
@@ -53,7 +53,7 @@ function Navigation() {
           </li>
           <li>
             <a
-              href="#favourites"
+              href="#userFavourites"
               className={activePage === "favourites" ? "active" : ""}
               onClick={() => handlePageClick("favourites")}
             >
