@@ -44,7 +44,7 @@ function Navigation() {
           </li>
           <li>
             <a
-              href="#notifications"
+              href="#userNotifications"
               className={activePage === "notification" ? "active" : ""}
               onClick={() => handlePageClick("notification")}
             >
