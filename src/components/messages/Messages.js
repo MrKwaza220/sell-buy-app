@@ -3,7 +3,7 @@ import './Messages.css';
 
 const Message = () => {
     return (
-      <section id="messages">
+      <section id="userMessages">
         <div>Message </div>
       </section>
     );
