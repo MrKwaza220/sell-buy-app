@@ -3,15 +3,21 @@ import "./Navigation.css";
 
 function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
+  const [activePage, setActivePage] = useState("home");
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-   const [isOpen, setIsOpen] = useState(false);
-
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handlePageClick = (page) => {
+    setActivePage(page);
+    // Hide menu when navigating to a new page
+    setShowMenu(false);
   };
 
   return (
@@ -20,21 +26,49 @@ function Navigation() {
         <div className="logo">Mr Kwaza</div>
         <ul className={showMenu ? "show" : ""}>
           <li>
-            <a href="#" className="active">
+            <a
+              href="#home"
+              className={activePage === "home" ? "active" : ""}
+              onClick={() => handlePageClick("home")}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#">Messages</a>
+            <a
+              href="#messages"
+              className={activePage === "messages" ? "active" : ""}
+              onClick={() => handlePageClick("messages")}
+            >
+              Messages
+            </a>
           </li>
           <li>
-            <a href="#">Notification</a>
+            <a
+              href="#notifications"
+              className={activePage === "notification" ? "active" : ""}
+              onClick={() => handlePageClick("notification")}
+            >
+              Notification
+            </a>
           </li>
           <li>
-            <a href="#">Favourites</a>
+            <a
+              href="#favourites"
+              className={activePage === "favourites" ? "active" : ""}
+              onClick={() => handlePageClick("favourites")}
+            >
+              Favourites
+            </a>
           </li>
           <li>
-            <a href="#">Search</a>
+            <a
+              href="#"
+              className={activePage === "search" ? "active" : ""}
+              onClick={() => handlePageClick("search")}
+            >
+              Search
+            </a>
           </li>
           <li className="dropdown" onClick={toggleDropdown}>
             <a href="#" className="dropbtn">
@@ -46,11 +80,6 @@ function Navigation() {
             </div>
           </li>
         </ul>
-
-        {/* <a href="#" className="menu" onClick={toggleMenu}>
-          <i className="fa fa-bars"></i>
-          Menu
-        </a> */}
       </nav>
     </div>
   );

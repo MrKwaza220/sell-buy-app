@@ -14,6 +14,7 @@ nav {
     background: #232629;
     position: fixed;
     width: 100%;
+    
     top: 0;
 }
 
@@ -24,6 +25,7 @@ nav {
 
 ul {
     list-style: none;
+    
 }
 
 ul li {
@@ -36,6 +38,7 @@ ul li a {
     padding: 8px 30px;
     border-radius: 7px;
     transition: all .3s ease;
+    font-size: 18px;
 }
 
 ul li a:hover,
@@ -61,6 +64,7 @@ ul li a.active {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
+    margin-top: 10px;
   }
   
   .dropdown-content.show {
