@@ -16,7 +16,6 @@ function Navigation() {
 
   const handlePageClick = (page) => {
     setActivePage(page);
-    // Hide menu when navigating to a new page
     setShowMenu(false);
   };
 
