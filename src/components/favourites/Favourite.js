@@ -4,7 +4,7 @@ import './Favourites.css';
 const Favourites = () =>
 {
     return(
-        <section>
+        <section id="userfavourites">
             <div>
                 Favourites
             </div>
