@@ -9,12 +9,11 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 5%;
+    padding: 10px 10%;
     align-items: center;
     background: #232629;
     position: fixed;
     width: 100%;
-    
     top: 0;
 }
 

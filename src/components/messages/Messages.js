@@ -4,7 +4,9 @@ import './Messages.css';
 const Message = () => {
     return (
       <section id="userMessages">
-        <div>Message </div>
+        <h2>Messages</h2>
+
+
       </section>
     );
   };

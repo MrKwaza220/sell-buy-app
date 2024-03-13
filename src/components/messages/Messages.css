@@ -1,4 +1,10 @@
 #userMessages{
     background-color: aquamarine;
     height: 50rem;
+    padding: 10px 10%;
+}
+
+
+h2{
+    text-align: start;
 }

@@ -78,7 +78,10 @@ const Homepage = () => {
             </div>
           </div>
           <p>
-            <button>Message</button>
+            <a href="#userMessages">
+              <button>Message</button>
+            </a>
+           
           </p>
           {/* ********users contacts********************/}
           <div className="user_contacts">
