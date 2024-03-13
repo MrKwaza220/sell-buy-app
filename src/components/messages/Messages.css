@@ -1,5 +1,5 @@
 #userMessages{
-    background-color: aquamarine;
+    background-color: white;
     height: 50rem;
     padding: 10px 10%;
     width: 100%;
@@ -39,4 +39,18 @@ h2{
     width: 20px; 
     height: auto;
   }
-  
+  .users_message{
+    border: 1px solid black;
+    margin-top: 20px;
+
+  }
+  .user_chat{
+    margin-top: 20px;
+    border: 1px solid black;
+    /* background-color: bisque; */
+    text-align: start;
+  }
+  .user_chat p{
+    font-style: italic;
+    color: darkgreen;
+  }
