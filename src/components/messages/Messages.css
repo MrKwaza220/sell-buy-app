@@ -2,9 +2,41 @@
     background-color: aquamarine;
     height: 50rem;
     padding: 10px 10%;
+    width: 100%;
 }
 
 
 h2{
     text-align: start;
+    margin-top: 50px;
 }
+
+/* SearchBar.css */
+.search_chats {
+    position: relative;
+    
+    
+  }
+  
+  .search-input {
+    padding: 7px 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px 0 0 -700px; 
+    
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 75%;
+    left: 270px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .search-icon img {
+    width: 20px; 
+    height: auto;
+  }
+  
